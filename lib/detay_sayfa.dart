@@ -17,7 +17,7 @@ class _DetaySayfaState extends State<DetaySayfa> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Detay Sayfası"),
+        title: const Text("Detay Sayfası"),
       ),
       body: Center(
         child: Column(
@@ -25,12 +25,12 @@ class _DetaySayfaState extends State<DetaySayfa> {
           children: [
             Text(
               widget.kelime.ingilizce!,
-              style: TextStyle(
+              style: const TextStyle(
                   fontSize: 40, fontWeight: FontWeight.bold, color: Colors.red),
             ),
             Text(
               widget.kelime.turkce!,
-              style: TextStyle(fontSize: 40),
+              style: const TextStyle(fontSize: 40),
             ),
           ],
         ),

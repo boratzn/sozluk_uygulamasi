@@ -59,7 +59,7 @@ class CustomSearchDelegate extends SearchDelegate {
                 children: [
                   Text(
                     oAnkiKelime.ingilizce!,
-                    style: TextStyle(fontWeight: FontWeight.bold),
+                    style: const TextStyle(fontWeight: FontWeight.bold),
                   ),
                   Text(oAnkiKelime.turkce!)
                 ],

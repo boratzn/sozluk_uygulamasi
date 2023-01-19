@@ -19,7 +19,7 @@ class MainApp extends StatelessWidget {
         theme: ThemeData(
             primarySwatch: Colors.blue,
             visualDensity: VisualDensity.adaptivePlatformDensity),
-        home: AnaSayfa());
+        home: const AnaSayfa());
   }
 }
 
@@ -58,11 +58,11 @@ class _AnaSayfaState extends State<AnaSayfa> {
                   aramaYapiliyorMu = true;
                 });
               },
-              icon: Icon(Icons.search_rounded)),
+              icon: const Icon(Icons.search_rounded)),
         ],
         title: aramaYapiliyorMu
             ? TextField(
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                     hintText: "Arama yapmak için birşeyler yaz"),
                 onChanged: (value) {
                   setState(() {
@@ -70,7 +70,7 @@ class _AnaSayfaState extends State<AnaSayfa> {
                   });
                 },
               )
-            : Text("Sözlük Uygulaması"),
+            : const Text("Sözlük Uygulaması"),
       ),
       body: FutureBuilder(
         future:
@@ -97,7 +97,7 @@ class _AnaSayfaState extends State<AnaSayfa> {
                         children: [
                           Text(
                             oAnkiKelime.ingilizce!,
-                            style: TextStyle(fontWeight: FontWeight.bold),
+                            style: const TextStyle(fontWeight: FontWeight.bold),
                           ),
                           Text(oAnkiKelime.turkce!)
                         ],
@@ -108,7 +108,7 @@ class _AnaSayfaState extends State<AnaSayfa> {
               },
             );
           } else {
-            return Center();
+            return const Center();
           }
         },
       ),
